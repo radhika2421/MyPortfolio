@@ -14,14 +14,16 @@
 }
 
 .home-text {
+    font-size: 1.5rem;
     flex: 1; /* Takes up available space */
-    text-align: left;
+    text-align: center;
 }
 
 .home-image {
-    flex: 1; /* Takes up available space */
     display: flex;
-    justify-content: flex-end; /* Aligns image to the right */
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+    height: 100%; /* Adjust based on parent container */
 }
 
 .circular-image {
@@ -46,6 +48,10 @@ header {
     color: white;
     padding: 15px 0;
     text-align: center;
+    border-radius: 50px;
+    width: 80%; /* Decrease width */
+    margin: 20px auto 0 auto; /* Moves it down */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 nav ul {
