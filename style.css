@@ -6,6 +6,7 @@
     font-family: 'Ancizar Serif', cursive;
 }
 
+
 #header-list{
     justify-content: center;  /* Centers items horizontally */
     align-items: center;      /* Centers items vertically */
@@ -74,7 +75,10 @@
 body {
     background: linear-gradient(to bottom, #FFDCDC, #FFF2EB);
     color: #333;
+    transition: background-color 0.3s, color 0.3s;
 }
+
+
 
 /* Header and Navigation */
 header {
@@ -114,11 +118,11 @@ section {
 /* Project Cards */
 .project {
     background: white;
+    box-shadow: 0 0 10px black;
     padding: 20px;
     margin: 20px auto;
     width: 80%;
     max-width: 600px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
     border-radius: 5px;
 }
 
@@ -132,6 +136,27 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
+#theme-toggle {
+    position: absolute;
+    top: 30px;
+    right: 50px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+}
+
+#theme-icon {
+    width: 3rem;
+    height: 3rem;
+    transition: transform 0.3s ease;
+}
+
+#theme-toggle:hover #theme-icon {
+    transform: rotate(20deg);
+}
+
 
 /* Responsive Design */
 @media (max-width: 768px) {
