@@ -137,6 +137,18 @@ footer {
     width: 100%;
 }
 
+.theme-icon {
+    display: none;
+}
+
+body.light #sun-icon {
+    display: inline;
+}
+
+body.dark #moon-icon {
+    display: inline;
+}
+
 #theme-toggle {
     position: absolute;
     top: 30px;

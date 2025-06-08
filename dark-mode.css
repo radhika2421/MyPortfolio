@@ -65,6 +65,10 @@
     padding: 20px;
 }
 
+.education-title{
+    color: #f0f0f0;
+}
+
 .heading{
     font-size: 3rem; /* or 48px, or adjust as you like */
     margin-bottom: 2rem;
@@ -102,7 +106,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     text-decoration: none;
     font-size: 18px;
 }
@@ -116,6 +120,7 @@ section {
 /* Project Cards */
 .project {
     background: white;
+    color: #000;
     box-shadow: 0 0 10px black;
     padding: 20px;
     margin: 20px auto;
