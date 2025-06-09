@@ -6,22 +6,43 @@
     font-family: 'Ancizar Serif', cursive;
 }
 
+/* Header and Navigation */
+header {
+    background: #FFD6BA;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+    border-radius: 50px;
+    height: 10%;
+    width: 80%; /* Decrease width */
+    margin: 20px auto 0 auto; /* Moves it down */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
 
 #header-list{
+    display: flex;
+    gap: 5rem;
     justify-content: center;  /* Centers items horizontally */
     align-items: center;      /* Centers items vertically */
     list-style: none;
-    padding: 0;
     margin: 0;
 }
 
 #header-list li{
-    margin: 0 90px;
+    display: flex;
+    justify-content: center;
+    gap: 2rem; /* reduce this number to tighten the spacing */
+    list-style: none;
+    margin: 0 15px;
+    font-size: 15px;
+}
+#header-list li a {
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    display: flex-wrap;
+    text-decoration: none;
 }
 
-#header-list li a{
-    font-size: 25px;
-}
 
 .home-container {
     display: flex;
@@ -78,36 +99,6 @@ body {
     transition: background-color 0.3s, color 0.3s;
 }
 
-
-
-/* Header and Navigation */
-header {
-    background: #FFD6BA;
-    color: white;
-    padding: 15px 0;
-    text-align: center;
-    border-radius: 50px;
-    width: 80%; /* Decrease width */
-    margin: 20px auto 0 auto; /* Moves it down */
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-    text-align: center;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: rgb(0, 0, 0);
-    text-decoration: none;
-    font-size: 18px;
-}
 
 /* Sections */
 section {
@@ -189,6 +180,47 @@ color:rgb(59, 151, 242);
 border-color: black;
 }
 
+/* Feedback */
+#feedback {
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+#feedback-form {
+  max-width: 600px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+#feedback-form label {
+  font-weight: bold;
+  text-align: left;
+}
+
+#feedback-form input,
+#feedback-form textarea {
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+}
+
+#feedback-form button {
+  background-color: #333;
+  color: white;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#feedback-form button:hover {
+  background-color: #555;
+}
+
 
 /* Footer & contacts */
 .footer {
@@ -251,7 +283,7 @@ body.dark #moon-icon {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    nav ul li {
+    #header-list {
         display: block;
         margin: 10px 0;
     }
