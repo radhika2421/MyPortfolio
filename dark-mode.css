@@ -107,6 +107,14 @@ section {
 }
 
 /* Project Cards */
+.project-container{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    padding: 1rem;
+}
+
 .project {
     background: white;
     color: #000;
